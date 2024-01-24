@@ -6,13 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/moneyET"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="100dp"
+        android:hint="@string/enter_amount"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rupeesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/rupees"
+        app:layout_constraintEnd_toEndOf="@id/dollarsBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moneyET" />
+
+    <Button
+        android:id="@+id/dollarsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/dollars"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rupeesBtn"
+        app:layout_constraintTop_toBottomOf="@id/moneyET" />
+
+    <TextView
+        android:id="@+id/convertedAmountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dollarsBtn"
+        tools:text="Coverted Amount is 300 rupees" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
