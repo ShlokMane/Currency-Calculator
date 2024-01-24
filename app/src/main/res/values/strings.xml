@@ -3,4 +3,6 @@
     <string name="enter_amount">Enter Amount</string>
     <string name="rupees">Rupees</string>
     <string name="dollars">Dollars</string>
+    <string name="converted_amount">Converted Amount %.2f</string>
+    <string name="warning_enter_amount">Please enter a amount</string>
 </resources>
